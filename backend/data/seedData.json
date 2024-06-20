@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "_id": "60d21b4667d0d8992e610c85",
+      "username": "user123",
+      "email": "user123@example.com",
+      "password": "hashed_password",
+      "profile": {
+        "bio": "About the user...",
+        "karma": 1000,
+        "created_at": "2023-06-18T00:00:00Z"
+      },
+      "subscribed_subreddits": ["60d21b4967d0d8992e610c86", "60d21b4d67d0d8992e610c87"],
+      "saved_posts": ["60d21b4e67d0d8992e610c88", "60d21b4f67d0d8992e610c89"],
+      "activity_log": [
+        {"action": "commented", "post_id": "60d21b5067d0d8992e610c8a", "timestamp": "2024-06-18T00:00:00Z"},
+        {"action": "posted", "subreddit_id": "60d21b4967d0d8992e610c86", "timestamp": "2024-06-18T01:00:00Z"}
+      ]
+    }
+  ],
+  "subreddits": [
+    {
+      "_id": "60d21b4967d0d8992e610c86",
+      "name": "exampleSubreddit",
+      "description": "Description of the subreddit...",
+      "created_by": "60d21b4667d0d8992e610c85",
+      "created_at": "2023-01-01T00:00:00Z",
+      "moderators": ["60d21b4667d0d8992e610c85"],
+      "rules": ["Rule 1", "Rule 2"],
+      "subscribers_count": 10000
+    }
+  ],
+  "posts": [
+    {
+      "_id": "60d21b4e67d0d8992e610c88",
+      "title": "Boeing CEO hearing",
+      "body": "I know it happens: Boeing chief admits to pilot errors",
+      "author_id": "60d21b4667d0d8992e610c85",
+      "subreddit_id": "60d21b4967d0d8992e610c86",
+      "created_at": "2024-06-18T00:00:00Z",
+      "votes": {"upvotes": 602, "downvotes": 5},
+      "comments": [
+        {
+          "comment_id": "60d21b4f67d0d8992e610c89",
+          "author_id": "60d21b4667d0d8992e610c85",
+          "body": "Comment content...",
+          "created_at": "2024-06-18T01:00:00Z",
+          "votes": {"upvotes": 10, "downvotes": 1}
+        }
+      ]
+    },
+    {
+      "_id": "60d21b4e67d0d8992e610c89",
+      "title": "Timberlake released",
+      "body": "Justin Timberlake was released after...",
+      "author_id": "60d21b4667d0d8992e610c85",
+      "subreddit_id": "60d21b49667d0d8992e610c86",
+      "created_at": "2024-06-18T00:00:00Z",
+      "votes": {"upvotes": 439, "downvotes": 3},
+      "comments": [
+        {
+          "comment_id": "60d21b4f67d0d8992e610c8a",
+          "author_id": "60d21b4667d0d8992e610c85",
+          "body": "Interesting development!",
+          "created_at": "2024-06-18T01:00:00Z",
+          "votes": {"upvotes": 15, "downvotes": 1}
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "_id": "60d21b4f67d0d8992e610c89",
+      "post_id": "60d21b4e67d0d8992e610c88",
+      "author_id": "60d21b4667d0d8992e610c85",
+      "body": "Comment content...",
+      "created_at": "2024-06-18T00:00:00Z",
+      "votes": {"upvotes": 10, "downvotes": 1}
+    }
+  ],
+  "votes": [
+    {
+      "_id": "60d21b5067d0d8992e610c8a",
+      "user_id": "60d21b4667d0d8992e610c85",
+      "post_id": "60d21b4e67d0d8992e610c88",
+      "vote_type": "upvote",
+      "created_at": "2024-06-18T00:00:00Z"
+    }
+  ],
+  "notifications": [
+    {
+      "_id": "60d21b5167d0d8992e610c8b",
+      "user_id": "60d21b4667d0d8992e610c85",
+      "type": "comment_reply",
+      "content": "You have a new comment reply...",
+      "link": "60d21b4e67d0d8992e610c88/60d21b4f67d0d8992e610c89",
+      "created_at": "2024-06-18T00:00:00Z",
+      "read": false
+    }
+  ]
+}
